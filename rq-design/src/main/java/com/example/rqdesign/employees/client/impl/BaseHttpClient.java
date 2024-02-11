@@ -1,7 +1,10 @@
 package com.example.rqdesign.employees.client.impl;
 
+import com.example.rqdesign.employees.exception.BaseHttpClientException;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
+import org.springframework.stereotype.Component;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
@@ -14,6 +17,8 @@ import java.util.Arrays;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+@Component
+@Slf4j
 public class BaseHttpClient {
 
     @Autowired
@@ -74,15 +79,19 @@ public class BaseHttpClient {
         try {
             URI uri = new URI(url);
 
-            MultiValueMap<String, String> multiValueMap = new LinkedMultiValueMap<>(
-                    params.entrySet().stream().collect(Collectors.toMap(e -> e.getKey(), e -> Arrays.asList(e.getValue())))
-            );
-            UriComponents uriComponents = UriComponentsBuilder.fromUri(uri).queryParams(multiValueMap).build();
-            return uriComponents.toUri();
+            if (params != null) {
+                MultiValueMap<String, String> multiValueMap = new LinkedMultiValueMap<>(
+                        params.entrySet().stream().collect(Collectors.toMap(e -> e.getKey(), e -> Arrays.asList(e.getValue())))
+                );
+                UriComponents uriComponents = UriComponentsBuilder.fromUri(uri).queryParams(multiValueMap).build();
+                uri = uriComponents.toUri();
+            }
+
+            return uri;
 
         } catch (URISyntaxException e) {
-            System.out.println("Exception in BaseHttpClient");
+            log.error("Exception in BaseHttpClient in URI parsing : {}", e);
+            throw new BaseHttpClientException("Exception in BaseHttpClient in URI parsing");
         }
-        return null;
     }
 }

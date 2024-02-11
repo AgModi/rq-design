@@ -1,0 +1,145 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "id": "1",
+      "employee_name": "Tiger Nixon",
+      "employee_salary": "320800",
+      "employee_age": "61",
+      "profile_image": ""
+    },
+    {
+      "id": "2",
+      "employee_name": "Tom Cruise",
+      "employee_salary": "400000",
+      "employee_age": "40",
+      "profile_image": ""
+    },
+    {
+      "id": "3",
+      "employee_name": "Samsher Saxena",
+      "employee_salary": "500000",
+      "employee_age": "31",
+      "profile_image": ""
+    },
+    {
+      "id": "4",
+      "employee_name": "Rick Nixon",
+      "employee_salary": "320800",
+      "employee_age": "61",
+      "profile_image": ""
+    },
+    {
+      "id": "5",
+      "employee_name": "Noch Cruise",
+      "employee_salary": "400000",
+      "employee_age": "40",
+      "profile_image": ""
+    },
+    {
+      "id": "6",
+      "employee_name": "R R",
+      "employee_salary": "500000",
+      "employee_age": "31",
+      "profile_image": ""
+    },
+    {
+      "id": "7",
+      "employee_name": "Soft Nixon",
+      "employee_salary": "320800",
+      "employee_age": "61",
+      "profile_image": ""
+    },
+    {
+      "id": "8",
+      "employee_name": "DK Top",
+      "employee_salary": "400000",
+      "employee_age": "40",
+      "profile_image": ""
+    },
+    {
+      "id": "9",
+      "employee_name": "Bahdur JK",
+      "employee_salary": "500000",
+      "employee_age": "31",
+      "profile_image": ""
+    },
+    {
+      "id": "10",
+      "employee_name": "Rid Nixon",
+      "employee_salary": "320800",
+      "employee_age": "61",
+      "profile_image": ""
+    },
+    {
+      "id": "11",
+      "employee_name": "Lock Top",
+      "employee_salary": "400000",
+      "employee_age": "40",
+      "profile_image": ""
+    },
+    {
+      "id": "12",
+      "employee_name": "Sofi Don",
+      "employee_salary": "500000",
+      "employee_age": "31",
+      "profile_image": ""
+    },
+    {
+      "id": "13",
+      "employee_name": "Tom salaey Nixon",
+      "employee_salary": "900800",
+      "employee_age": "37",
+      "profile_image": ""
+    },
+    {
+      "id": "14",
+      "employee_name": "Billi Cruise",
+      "employee_salary": "400000",
+      "employee_age": "70",
+      "profile_image": ""
+    },
+    {
+      "id": "15",
+      "employee_name": "Rachit Saxena",
+      "employee_salary": "500000",
+      "employee_age": "31",
+      "profile_image": ""
+    },
+    {
+      "id": "16",
+      "employee_name": "Don Nixon",
+      "employee_salary": "320800",
+      "employee_age": "61",
+      "profile_image": ""
+    },
+    {
+      "id": "17",
+      "employee_name": "Prof Cruise",
+      "employee_salary": "400000",
+      "employee_age": "40",
+      "profile_image": ""
+    },
+    {
+      "id": "18",
+      "employee_name": "Sue Saxena",
+      "employee_salary": "500000",
+      "employee_age": "31",
+      "profile_image": ""
+    },
+    {
+      "id": "19",
+      "employee_name": "Lekkar Nixon",
+      "employee_salary": "320800",
+      "employee_age": "32",
+      "profile_image": ""
+    },
+    {
+      "id": "20",
+      "employee_name": "Tom Tom",
+      "employee_salary": "400000",
+      "employee_age": "40",
+      "profile_image": ""
+    }
+  ]
+}

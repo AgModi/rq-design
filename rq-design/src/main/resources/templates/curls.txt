@@ -1,0 +1,35 @@
+Get employees
+
+curl --location 'http://localhost:8080/employees' \
+--header 'Content-Type: application/json'
+
+Get employees by name
+curl --location 'http://localhost:8080/employees/search?name=Sonya' \
+--header 'Content-Type: application/json'
+
+Get employee by id
+curl --location 'http://localhost:8080/employees/1' \
+--header 'Content-Type: application/json'
+
+Get highest salary
+curl --location 'http://localhost:8080/employees/top-salary' \
+--header 'Content-Type: application/json'
+
+Highest K earning employees
+curl --location 'http://localhost:8080/employees/top-earning-emps?topKCount=5' \
+--header 'Content-Type: application/json'
+
+Create employee
+curl --location 'http://localhost:8080/employees' \
+--header 'Content-Type: application/json' \
+--data '{
+    "id": "1",
+    "name": "Foo Bar",
+    "salary": "320800",
+    "age": "61"
+  }'
+
+
+delete employee
+curl --location --request DELETE 'http://localhost:8080/employees/1' \
+--header 'Content-Type: application/json'

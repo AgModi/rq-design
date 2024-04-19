@@ -31,7 +31,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment= SpringBootTest.WebEnvironment.DEFINED_PORT)
-class RqDesignApplicationTests {
+public class RqDesignApplicationTests {
 
 	@LocalServerPort
 	int serverPort;
